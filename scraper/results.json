@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ma Manan",
+    "google_maps_link": "https://www.google.com/maps/place/Mama+Manana/data=!4m7!3m6!1s0x40d4cefc40b883e1:0x2087986d311e90f6!8m2!3d50.4366838!4d30.5157114!16s%2Fg%2F11bwys_79c!19sChIJ4YO4QPzO1EAR9pAeMW2YhyA?authuser=0&hl=pl&rclk=1",
+    "website": "http://mamamanana.kiev.ua/"
+  },
+  {
+    "name": "Pervak",
+    "google_maps_link": "https://www.google.com/maps/place/Pervak/data=!4m7!3m6!1s0x40d4ce5102781b5b:0x78150caa503f4264!8m2!3d50.439659!4d30.519268!16s%2Fg%2F1th229vv!19sChIJWxt4AlHO1EARZEI_UKoMFXg?authuser=0&hl=pl&rclk=1",
+    "website": "http://www.pervak.kiev.ua/"
+  },
+  {
+    "name": "Favorite Unc",
+    "google_maps_link": "https://www.google.com/maps/place/Favorite+Uncle/data=!4m7!3m6!1s0x40d4cef03956f7bb:0xf83b8ed0c6bfc92a!8m2!3d50.438297!4d30.5010792!16s%2Fg%2F11b6t77knx!19sChIJu_dWOfDO1EARKsm_xtCOO_g?authuser=0&hl=pl&rclk=1",
+    "website": "https://ulyublenyidyadya.choiceqr.com/booking"
+  },
+  {
+    "name": "Under Wonder",
+    "google_maps_link": "https://www.google.com/maps/place/Under+Wonder/data=!4m7!3m6!1s0x40d4cefebf9c1b77:0x34b7bb04b494b3e1!8m2!3d50.4393838!4d30.5176835!16s%2Fg%2F1hc1kz3jt!19sChIJdxucv_7O1EAR4bOUtAS7tzQ?authuser=0&hl=pl&rclk=1",
+    "website": "https://underwonderkyiv.choiceqr.com/"
+  },
+  {
+    "name": "BEEF meat & win",
+    "google_maps_link": "https://www.google.com/maps/place/BEEF+meat+%26+wine/data=!4m7!3m6!1s0x40d4cefe5b01593b:0x4e63ece4137aea63!8m2!3d50.4390459!4d30.5207441!16s%2Fg%2F1vk6xr57!19sChIJO1kBW_7O1EARY-p6E-TsY04?authuser=0&hl=pl&rclk=1",
+    "website": "http://beef.kyiv.ua/"
+  },
+  {
+    "name": "Chachapuri Restaurant",
+    "google_maps_link": "https://www.google.com/maps/place/Chachapuri+Restaurant/data=!4m7!3m6!1s0x40d4cef5d3aa8a39:0x8f5cddfc2d8ac13b!8m2!3d50.4455278!4d30.5022432!16s%2Fg%2F1pzq39vs9!19sChIJOYqq0_XO1EARO8GKLfzdXI8?authuser=0&hl=pl&rclk=1",
+    "website": "http://chacha.kyiv.ua/"
+  }
+]

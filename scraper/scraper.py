@@ -17,8 +17,8 @@ service = Service(ChromeDriverManager().install())
 
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-city = "kiev"
-driver.get(f"https://www.google.com/maps/search/{city}+restaurant")
+keyword  = "kiev restaurant"
+driver.get(f"https://www.google.com/maps/search/{keyword}")
 
 try:
     WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "form:nth-child(2)"))).click()
@@ -59,7 +59,7 @@ driver.execute_script("""
 
 items = driver.find_elements(By.CSS_SELECTOR, "div[role='feed'] > div > div[jsaction] > a")
 print(items)
-restaurant_links = []
+google_maps_links = []
 for item in items:
     links = {}
     try:
@@ -68,34 +68,29 @@ for item in items:
         pass
 
     if (links.get('link')):
-        restaurant_links.append(links)
+        google_maps_links.append(links)
 
 data = []
 i = 0
 
-for restaurant in restaurant_links:
+for link in google_maps_links:
     i += 1
-    driver.get(restaurant['link'])
+    driver.get(link['link'])
 
-    menu_elem = driver.find_elements(By.CSS_SELECTOR, "a[data-item-id='menu']")
-    if menu_elem:
-        menu_link = menu_elem[0].get_attribute("href")
+    authority_elem = driver.find_elements(By.CSS_SELECTOR, "a[data-item-id='authority']")
+    if authority_elem:
+        href = authority_elem[0].get_attribute("href")
+        website = href
     else:
-        authority_elem = driver.find_elements(By.CSS_SELECTOR, "a[data-item-id='authority']")
-        if authority_elem:
-            href = authority_elem[0].get_attribute("href")
-            if href.startswith("https://choiceqr"):
-                menu_link = href
-            else:
-                menu_link = ""
+        website = ""
 
 
-    restaurant_data = {
+    entry_data = {
         "name": driver.title.strip("– Mapy Google"),
-        "link": restaurant['link'],
-        "menu_link": menu_link
+        "google_maps_link": link['link'],
+        "website": website
     }
-    data.append(restaurant_data)
+    data.append(entry_data)
 
     if( i > 5):
         break
