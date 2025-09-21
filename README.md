@@ -5,7 +5,7 @@ A simple Python scraper built with **Selenium** and JavaScript that extracts bus
 The scraper collects:
 - Business **name**
 - Direct **Google Maps link**
-- Official **website** (if available)
+- **Website** (if available)
 
 Results are saved in **JSON format** for easy reuse.
 
